@@ -11,25 +11,13 @@
 <link rel="import" href="../core-icons/av-icons.html">
 <link rel="import" href="../paper-slider/paper-slider.html">
 
-<!--
-Material design audio element
-
-##### Example
-
-    <x-audio src="example.mp3" name="Example"></x-audio>
-
-@element x-audio
-@blurb Material design audio element
-@status alpha
-@homepage https://github.com/tc-team/components/x-audio
--->
 <polymer-element name="x-audio" attributes="src name disabled">
 
   <template>
 
     <link rel="stylesheet" href="x-audio.css">
 
-    <div id="container" horizontal layout>
+    <div class="wrapper" horizontal layout>
       <core-icon id="playButton" icon="av:play-arrow" on-click="{{play}}"></core-icon>
       <div class="audio" vertical layout>
         <div>
